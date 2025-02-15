@@ -25,7 +25,7 @@ export default function Home() {
     return (
         <motion.div className='home' style={{ backgroundImage }}>
             <div className='container'>
-            <span className='badge'>Innovation</span>
+            <span className='badge'>salut,je suis Mahjoubi BILEL</span>
             <h1 class="title">Développeur Full-Stack</h1>
             <p class="description">
                 Web,Mobile,Front-end,Back-end,designer,je suis un développeur full-stack passionné par la technologie et le design.
