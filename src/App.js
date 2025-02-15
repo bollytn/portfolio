@@ -8,13 +8,18 @@ import Resume from './containers/resume';
 import Skills from './containers/skills';
 import Navbar from './components/navbar';
 
+
 function App() {
+
   return (
     <div className="App">
+
       {/* Particales js */}
 
+
       {/*navbar */}
-      <Navbar/>
+      <Navbar />
+
       {/* main page content */}
       <Routes>
         <Route index path="/" element={<Home />} />
@@ -27,5 +32,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
