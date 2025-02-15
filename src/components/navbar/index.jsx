@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { FaBars, FaReact } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import './styles.scss';
+import logo from '../../assets/logo.png';
 const data = [
     {
         label: "HOME",
@@ -44,7 +45,8 @@ export default function Navbar() {
             <nav className='navbar'>
                 <div className="navbar__container">
                     <Link to={"/"} className="navbar__container__logo">
-                        <FaReact size={30} />
+                    <img className='logo' src={logo} alt="logo" />
+                        {/* <FaReact size={30} /> */}
                     </Link>
                 </div>
                 <ul className={toggleIcon ? 'navbar__container__menu active' : 'navbar__container__menu'}>
