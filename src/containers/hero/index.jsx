@@ -35,7 +35,7 @@ export default function Home() {
             whiteTap={{scale:0.985,}}
             style={{border, boxShadow}}
             >
-                Download My CV
+                Téélécharger mon CV
                 <span class="icon">{FiArrowRight}</span>
             </motion.button>
             </div>
