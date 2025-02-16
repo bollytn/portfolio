@@ -13,6 +13,15 @@
     z-index: -999;
   }
 
+  .canvas-container {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -99999; 
+  }
+
   .container {
     font-family: monospace;
     width: 100vh;
@@ -33,7 +42,11 @@
 
     .title {
       max-width: 50rem;
-      background: linear-gradient(to bottom right, var(--yellow-theme-main-color), #9ca3af);
+      background: linear-gradient(
+        to bottom right,
+        var(--yellow-theme-main-color),
+        #9ca3af
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-align: center;
@@ -91,6 +104,14 @@
       &:active .icon {
         transform: rotate(-12deg);
       }
+    }
+    .start {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
     }
   }
 }

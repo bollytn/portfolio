@@ -3,6 +3,9 @@ import './styles.scss'
 import { motion, useMotionTemplate, useMotionValue, animate } from 'framer-motion'
 import { FiArrowRight } from "react-icons/fi";
 
+import { Stars } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber'
+
 const COLORS = ["#94a70b", "#1E67C6", "#CE84CF", "#DD335C"];
 
 export default function Home() {
@@ -24,9 +27,12 @@ export default function Home() {
 
     return (
         <motion.div className='home' style={{ backgroundImage }}>
+            <Canvas className='canvas-container'>
+                <Stars radius={50} count={2500} factor={4} fade speed={2} />
+            </Canvas>
             <motion.div className='container'
-                initial={{ opacity: 0 , y:-50}}
-                animate={{ opacity: 1 ,y:0}}
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
 
             >
@@ -51,9 +57,11 @@ export default function Home() {
                     style={{ border, boxShadow }}
                 >
                     Téélécharger mon CV
-                    <FiArrowRight className='icon' size={25}/>
+                    <FiArrowRight className='icon' size={25} />
                 </motion.button>
+
             </motion.div>
+
         </motion.div>
     )
 }
