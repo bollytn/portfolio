@@ -24,21 +24,36 @@ export default function Home() {
 
     return (
         <motion.div className='home' style={{ backgroundImage }}>
-            <div className='container'>
-            <span className='badge'>salut,je suis Mahjoubi BILEL</span>
-            <h1 class="title">Développeur Full-Stack</h1>
-            <p class="description">
-                Web,Mobile,Front-end,Back-end,designer,je suis un développeur full-stack passionné par la technologie et le design.
-            </p>
-            <motion.button className='btn'
-            whileHover={{scale:1.015,}}
-            whiteTap={{scale:0.985,}}
-            style={{border, boxShadow}}
+            <motion.div className='container'
+                initial={{ opacity: 0 , y:-50}}
+                animate={{ opacity: 1 ,y:0}}
+                transition={{ duration: 0.5 }}
+
             >
-                Téélécharger mon CV
-                <span class="icon">{FiArrowRight}</span>
-            </motion.button>
-            </div>
+                <span className='badge'>salut,je suis Mahjoubi BILEL</span>
+                <h1 class="title">Développeur Full-Stack</h1>
+                <p class="description">
+                    Web,Mobile,Front-end,Back-end,designer,je suis un développeur full-stack passionné par la technologie et le design.
+                </p>
+                <motion.button className='btn'
+                    initial={{ y: -250 }}
+                    animate={{ y: 0 }}
+                    whileHover={{ scale: 1.1 }}
+                    whiteTap={{ scale: 0.9 }}
+                    transition={{
+                        type: "spring",
+                        duration: 0.6,
+                        bounce: 0.3,
+                        stiffness: 400,
+                        damping: 10,
+                    }}
+
+                    style={{ border, boxShadow }}
+                >
+                    Téélécharger mon CV
+                    <span class="icon">{FiArrowRight}</span>
+                </motion.button>
+            </motion.div>
         </motion.div>
     )
 }
