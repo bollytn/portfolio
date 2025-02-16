@@ -1,5 +1,5 @@
 .home {
-  z-index: -999;
+  z-index: 1;
   position: relative;
   display: grid;
   min-height: calc(100vh - 80px); /* Ensuring proper height calculation */
@@ -8,6 +8,10 @@
   background-color: #030712; /* Equivalent to bg-gray-950 */
   padding: 6rem 1rem; /* px-4, py-24 */
   color: #e5e7eb; /* Equivalent to text-gray-200 */
+
+  @media (max-width: 768px) {
+    z-index: -999;
+  }
 
   .container {
     font-family: monospace;
@@ -81,6 +85,7 @@
 
       &:hover .icon {
         transform: rotate(-45deg);
+        color: var(--yellow-theme-main-color);
       }
 
       &:active .icon {

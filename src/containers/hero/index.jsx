@@ -51,7 +51,7 @@ export default function Home() {
                     style={{ border, boxShadow }}
                 >
                     Téélécharger mon CV
-                    <span class="icon">{FiArrowRight}</span>
+                    <FiArrowRight className='icon' size={25}/>
                 </motion.button>
             </motion.div>
         </motion.div>
