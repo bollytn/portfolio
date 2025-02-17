@@ -61,6 +61,7 @@ const filterData = [
 
 export default function Portfolio() {
   const [filterId, setFilterId] = React.useState(1);
+  const [hover, setHover] = React.useState(null);
 
   const handleFilter = (currentId) => () => {
     setFilterId(currentId);
@@ -70,6 +71,10 @@ export default function Portfolio() {
     portfolioData :
     portfolioData.filter((item) => item.id === filterId)
 
+  const handleHover = (index) => {
+    setHover(index)
+  }
+  
 
   return (
     <section id='portfolio' className='portfolio'>
@@ -86,12 +91,27 @@ export default function Portfolio() {
         </ul>
         <div className='portfolio__content__cards'>
           {
-            filtredItems.map((item) => (
-              <div key={item.name.trim()} className='portfolio__content__cards__item'>
+            filtredItems.map((item,index) => (
+              <div 
+              key={item.name.trim()} 
+              className='portfolio__content__cards__item'
+              onMouseEnter={()=>handleHover(index)}
+              onMouseLeave={()=>handleHover(null)}
+              >
                 <div className='portfolio__content__cards__item__img-wrapper'>
                   <a href={item.link}>
                     <img src={item.image} alt={item.name} />
                   </a>
+                </div>
+                <div className='overlay'>
+                  {
+                    hover === index && (
+                      <div>
+                        <p>{item.name}</p>
+                      <button>Visite</button>
+                      </div>
+                    )
+                  }
                 </div>
               </div>
             ))
