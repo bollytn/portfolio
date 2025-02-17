@@ -2,7 +2,7 @@
 
 Set-ExecutionPolicy Bypass -Scope Process
 
-## Available Scripts
+### `npm install`
 
 In the project directory, you can run:
 
