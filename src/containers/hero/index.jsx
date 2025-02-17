@@ -37,8 +37,8 @@ export default function Home() {
 
             >
                 <span className='badge'>salut,je suis Mahjoubi BILEL</span>
-                <h1 class="title">Développeur Full-Stack</h1>
-                <p class="description">
+                <h1 className="title">Développeur Full-Stack</h1>
+                <p className="description">
                     Web,Mobile,Front-end,Back-end,designer,je suis un développeur full-stack passionné par la technologie et le design.
                 </p>
                 <motion.button className='btn'

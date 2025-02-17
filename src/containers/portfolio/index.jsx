@@ -12,32 +12,32 @@ import "./styles.scss";
 
 const portfolioData = [
   {
-    id: 1,
+    id: 2,
     name: "Ecommerce",
     image: ImageOne,
     link: "",
   },
   {
-    id: 2,
+    id: 3,
     name: "Notes App",
     link: "",
     image: ImageTwo,
   },
   {
-    id: 3,
+    id: 2,
     name: "Supplier Design",
     image: ImageThree,
     link: "",
   },
   {
-    id: 4,
+    id: 2,
     name: "Todo App",
     image: ImageFour,
 
     link: "",
   },
   {
-    id: 5,
+    id: 3,
     name: "Shopping cart design",
     image: ImageFive,
     link: "",
@@ -60,15 +60,25 @@ const filterData = [
 ];
 
 export default function Portfolio() {
+  const [filterId, setFilterId] = React.useState(1);
+
+  const handleFilter = (currentId) => () => {
+    setFilterId(currentId);
+  };
+
+  const filtredItems = filterId === 1 ? portfolioData : portfolioData.filter((item) => item.id === filterId)
+  console.log(filtredItems);
+  
+
   return (
     <section id='portfolio' className='portfolio'>
       <PageHeaderContent headerText='Mon Portfolio'
         icon={<BsInfoCircleFill size={40} />}
       />
       <div className='portfolio__content'>
-      <ul className='portfolio__content__filter'>
+        <ul className='portfolio__content__filter'>
           {filterData.map((item) => (
-            <li key={item.filterId}>
+            <li onClick={handleFilter(item.filterId)} key={item.filterId}>
               {item.label}
             </li>
           ))}
@@ -76,7 +86,7 @@ export default function Portfolio() {
         <div className='portfolio__content__cards'>
           {
             portfolioData.map((item) => (
-              <div key={item.id} className='portfolio__content__cards__item'>
+              <div key={item.name.trim()} className='portfolio__content__cards__item'>
                 <div className='portfolio__content__cards__item__img-wrapper'>
                   <a href={item.link}>
                     <img src={item.image} alt={item.name} />
