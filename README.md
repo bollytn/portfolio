@@ -2,6 +2,8 @@
 
 Set-ExecutionPolicy Bypass -Scope Process
 
+$env:NODE_OPTIONS="--openssl-legacy-provider"
+
 ### `npm install`
 
 In the project directory, you can run:
