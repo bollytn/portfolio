@@ -66,9 +66,10 @@ export default function Portfolio() {
     setFilterId(currentId);
   };
 
-  const filtredItems = filterId === 1 ? portfolioData : portfolioData.filter((item) => item.id === filterId)
-  console.log(filtredItems);
-  
+  const filtredItems = filterId === 1 ?
+    portfolioData :
+    portfolioData.filter((item) => item.id === filterId)
+
 
   return (
     <section id='portfolio' className='portfolio'>
@@ -78,14 +79,14 @@ export default function Portfolio() {
       <div className='portfolio__content'>
         <ul className='portfolio__content__filter'>
           {filterData.map((item) => (
-            <li onClick={handleFilter(item.filterId)} key={item.filterId}>
+            <li className={item.filterId === filterId ? 'active' : ''} onClick={handleFilter(item.filterId)} key={item.filterId}>
               {item.label}
             </li>
           ))}
         </ul>
         <div className='portfolio__content__cards'>
           {
-            portfolioData.map((item) => (
+            filtredItems.map((item) => (
               <div key={item.name.trim()} className='portfolio__content__cards__item'>
                 <div className='portfolio__content__cards__item__img-wrapper'>
                   <a href={item.link}>
