@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+  "homepage":"https://bollytn/.github.io/portfolio_formation_2025",
+>>>>>>> 107f495 (heberger votre app)
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -27,6 +31,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+<<<<<<< HEAD
+=======
+    "predeploy":
+      "npm run build",
+    "deploy":
+      "gh-pages -d build",
+>>>>>>> 107f495 (heberger votre app)
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
