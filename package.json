@@ -106,6 +106,8 @@
 
     "css-loader": "^7.1.2",
 
+    "gh-pages": "^6.3.0",
+
     "style-loader": "^4.0.0"
 
   }
