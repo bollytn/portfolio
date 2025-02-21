@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/.github.io/portfolio_formation_2025/static/css/main.0d0ff8df.css",
+    "main.js": "/.github.io/portfolio_formation_2025/static/js/main.3ef823a5.js",
+    "static/media/image1.jpg": "/.github.io/portfolio_formation_2025/static/media/image1.8e4e65683dc0149fc984.jpg",
+    "static/media/image3.jpg": "/.github.io/portfolio_formation_2025/static/media/image3.9b66aa7c0651acf1cfb7.jpg",
+    "static/media/image5.jpg": "/.github.io/portfolio_formation_2025/static/media/image5.0efefb69f17d89ffb9cf.jpg",
+    "static/media/image4.jpg": "/.github.io/portfolio_formation_2025/static/media/image4.1b336ad8668953c0a113.jpg",
+    "static/media/image2.jpg": "/.github.io/portfolio_formation_2025/static/media/image2.baf82bff0266b026ebca.jpg",
+    "static/media/logo.png": "/.github.io/portfolio_formation_2025/static/media/logo.f3093cfc757b233bfbb0.png",
+    "index.html": "/.github.io/portfolio_formation_2025/index.html",
+    "main.0d0ff8df.css.map": "/.github.io/portfolio_formation_2025/static/css/main.0d0ff8df.css.map",
+    "main.3ef823a5.js.map": "/.github.io/portfolio_formation_2025/static/js/main.3ef823a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d0ff8df.css",
+    "static/js/main.3ef823a5.js"
+  ]
+}
