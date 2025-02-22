@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Home from './containers/hero';
 import About from './containers/about';
 import Contact from './containers/contact';
@@ -15,20 +15,22 @@ function App() {
     <div className="App">
 
       {/* Particales js */}
-      
+
 
       {/*navbar */}
       <Navbar />
 
       {/* main page content */}
-      <Routes>
-        <Route index path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/skills" element={<Skills />} />
-      </Routes>
+      <HashRouter>
+        <Routes>
+          <Route index path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/skills" element={<Skills />} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 }
