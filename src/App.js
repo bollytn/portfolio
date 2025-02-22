@@ -21,7 +21,7 @@ function App() {
       <Navbar />
 
       {/* main page content */}
-      <HashRouter>
+    
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -30,7 +30,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/skills" element={<Skills />} />
         </Routes>
-      </HashRouter>
+
     </div>
   );
 }
