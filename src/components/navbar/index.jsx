@@ -6,17 +6,17 @@ import './styles.scss';
 import logo from '../../assets/logo.png';
 const data = [
     {
-        label: "HOME",
+        label: "ACCUEIL",
         to: "/",
     }, {
-        label: "ABOUT ME",
+        label: "À PROPOS DE MOI",
         to: "/about",
     }, {
-        label: "SKILLS",
+        label: "COMPÉTENCES",
         to: "/skills",
     },
     {
-        label: "RESUME",
+        label: "CV",
         to: "/resume",
     },
     {
