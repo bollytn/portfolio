@@ -45,7 +45,7 @@ export default function Home() {
                     initial={{ y: -250 }}
                     animate={{ y: 0 }}
                     whileHover={{ scale: 1.1 }}
-                    whiteTap={{ scale: 0.9 }}
+                    whileTap={{ scale: 0.9 }}
                     transition={{
                         type: "spring",
                         duration: 0.6,
