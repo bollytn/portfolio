@@ -1,12 +1,14 @@
 {
 
-  "homepage": "https://bollytn/.github.io/portfolio_formation_2025",
+
 
   "name": "portfolio",
 
   "version": "0.1.0",
 
   "private": true,
+
+  "homepage": "https://bollytn/.github.io/portfolio_formation_2025",
 
   "dependencies": {
 
